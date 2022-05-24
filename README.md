@@ -1,7 +1,12 @@
 
-<h1 align="center">Android App Development<br>CSE-3162</h1>
+<h1 align="center">Android App Development</h1>
 
-This Project is all about making a simple Android App, where my name and my roll no will be shown.
+This Project is all about learning Android App Development so that i and my class-mates can be `কোটি-পতি পোলা` 😄.<br> In this Branch (Assignment_0) i amde a simple Android App, where my name and my roll no is shown.
+
+## Course Details
+- Course Name: Software Development Lab III
+- Course Code: CSE-3162
+- Teacher: [MD. OMAR FARUQE](https://github.com/omarfaruqe)
 
 ## Built With
 
