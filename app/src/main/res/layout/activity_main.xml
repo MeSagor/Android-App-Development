@@ -1,85 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingStart="@dimen/padding"
-        android:paddingEnd="@dimen/padding"
-        tools:context=".MainActivity">
-
-        <TextView
-            android:id="@+id/name_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:text="@string/Name"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_size" />
-
-        <EditText
-            android:id="@+id/nickname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:layout_weight="1"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/what_nickname"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColorHint="#757575"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <Button
-            android:id="@+id/done_btn"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="133dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="7dp"
-            android:layout_weight="1"
-            android:text="@string/doneBtn" />
-
-        <TextView
-            android:id="@+id/nickname_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:visibility="gone" />
-
-        <ImageView
-            android:id="@+id/star_img"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/yellow_star"
-            app:srcCompat="@android:drawable/btn_star_big_on"
-            tools:ignore="ImageContrastCheck" />
-
-
-        <ScrollView
-            android:id="@+id/bio_scroll"
-            android:layout_width="match_parent"
-            android:layout_height="277dp"
-            android:layout_marginTop="7dp">
-
-            <TextView
-                android:id="@+id/bio_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:lineSpacingMultiplier="1.2"
-                android:paddingTop="@dimen/padding"
-                android:text="@string/bio"
-                android:textSize="16sp" />
-        </ScrollView>
-
-    </LinearLayout>
-</layout>
+    <TextView
+        android:id="@+id/box_one_text"
+        style="@style/WhiteBox"
+        android:layout_width="378dp"
+        android:layout_height="31dp"
+        android:text="@string/box_one"
+        android:textColor="#616161"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+</androidx.constraintlayout.widget.ConstraintLayout>
