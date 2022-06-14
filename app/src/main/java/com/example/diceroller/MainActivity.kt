@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Button
-import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,15 +13,15 @@ class MainActivity : AppCompatActivity() {
 
         val diceImage = findViewById<ImageView>(R.id.imageView)
         val button = findViewById<Button>(R.id.button)
-        val textField = findViewById<EditText>(R.id.editTextNumber)
-        textField.setText("1");
+        val textField = findViewById<TextView>(R.id.editTextNumber)
+        textField.text = "1";
 
         button.setOnClickListener {
             rollDice(diceImage, textField)
         }
     }
 
-    private fun rollDice(diceImage: ImageView, textField: EditText) {
+    private fun rollDice(diceImage: ImageView, textField: TextView) {
         val randIdx = (1..6).random()
 
         val currentDice = when (randIdx) {
