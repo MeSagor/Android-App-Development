@@ -7,8 +7,8 @@
     <fragment
         android:id="@+id/titleFragment"
         android:name="com.example.appnavigation.TitleFragment"
-        android:label="fragment_title"
-        tools:layout="@layout/fragment_title" >
+        android:label="@string/android_trivia"
+        tools:layout="@layout/fragment_title">
         <action
             android:id="@+id/action_titleFragment_to_gameFragment2"
             app:destination="@id/gameFragment" />
@@ -16,8 +16,8 @@
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.example.appnavigation.GameFragment"
-        android:label="fragment_game"
-        tools:layout="@layout/fragment_game" >
+        android:label="@string/android_trivia"
+        tools:layout="@layout/fragment_game">
         <action
             android:id="@+id/action_gameFragment_to_gameOverFragment3"
             app:destination="@id/gameOverFragment3"
@@ -32,8 +32,8 @@
     <fragment
         android:id="@+id/gameOverFragment3"
         android:name="com.example.appnavigation.GameOverFragment"
-        android:label="fragment_game_over"
-        tools:layout="@layout/fragment_game_over" >
+        android:label="@string/android_trivia"
+        tools:layout="@layout/fragment_game_over">
         <action
             android:id="@+id/action_gameOverFragment3_to_gameFragment"
             app:destination="@id/gameFragment"
@@ -42,8 +42,8 @@
     <fragment
         android:id="@+id/gameWonFragment2"
         android:name="com.example.appnavigation.GameWonFragment"
-        android:label="fragment_game_won"
-        tools:layout="@layout/fragment_game_won" >
+        android:label="@string/android_trivia"
+        tools:layout="@layout/fragment_game_won">
         <action
             android:id="@+id/action_gameWonFragment2_to_gameFragment"
             app:destination="@id/gameFragment"
