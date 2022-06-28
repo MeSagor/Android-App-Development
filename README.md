@@ -12,3 +12,8 @@ This Project is all about learning Android App Development so that I and my clas
 ## Built With
 - [Android Studio](https://developer.android.com/studio)
 - [Kotlin](https://developer.android.com/kotlin)
+
+## Preview
+<p align="center">
+<img width="40%" src="Preview.gif">
+</p>
