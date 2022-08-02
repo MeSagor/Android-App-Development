@@ -2,7 +2,7 @@
 <h1 align="center">Android App Development</h1>
 
 This Project is all about learning Android App Development so that I and my class-mates can be `কোটি-পতি পোলা` 😄.
-<br><br>In this Branch`(Assignment_3)`, I work with Activity & Fragment Lifecycle.
+<br><br>In this Branch`(Assignment_4)`, I work with `App Architecture (UI Layer)`.
 
 ## Course Details
 - Course Name: Software Development Lab III
