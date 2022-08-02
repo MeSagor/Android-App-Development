@@ -14,6 +14,4 @@ This Project is all about learning Android App Development so that I and my clas
 - [Kotlin](https://developer.android.com/kotlin)
 
 ## Preview
-<p align="center">
-<img width="30%" src="preview.gif">
-</p>
+![](preview.gif)
