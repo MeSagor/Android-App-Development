@@ -40,7 +40,7 @@ class MyWidget extends StatelessWidget {
 }
 
 Future<String> getData() async{
-  String url = 'https://api.openweathermap.org/data/2.5/onecall?lat=24.557663&lon=89.502233&units=metric&exclude=minutely,daily,alerts,hourly&appid=d12df384e504558e0a7db7841f96679b';
+  String url = 'https://api.openweathermap.org/data/2.5/onecall?lat=24.3745&lon=88.6042&units=metric&exclude=minutely,daily,alerts,hourly&appid=d12df384e504558e0a7db7841f96679b';
   var response = await http.get(Uri.parse(url));
 
   if (response.statusCode == 200) {
