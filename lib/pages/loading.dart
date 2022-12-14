@@ -20,6 +20,7 @@ class _LoadingState extends State<Loading> {
       'temperatureMin': instance.temperatureMin,
       'temperatureMax': instance.temperatureMax,
       'condition': instance.condition,
+      'icon': instance.icon,
       'time': instance.time,
       'isDay': instance.isDay
     });

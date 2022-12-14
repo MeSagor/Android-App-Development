@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class home extends StatefulWidget {
   const home({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
     data = data.isNotEmpty ? data : ModalRoute.of(context)?.settings.arguments;
-    print(data);
+    // print(data);
 
     String bgImage = data['isDay'] ? 'sunny.png' : 'night.png';
 
@@ -22,20 +22,20 @@ class _homeState extends State<home> {
     int hour = data['time'].hour;
     currentHour = (hour % 12 == 0 ? 12 : hour % 12).toString() + (hour < 12 ? " AM" : " PM");
 
-    Icon conditionalIcon;
-    if (data['isDay']) {
-      conditionalIcon = const Icon(
-        FontAwesomeIcons.sun,
-        size: 75.0,
-        color: Colors.white,
-      );
-    } else {
-      conditionalIcon = const Icon(
-        FontAwesomeIcons.moon,
-        size: 75.0,
-        color: Colors.white,
-      );
-    }
+    // Icon conditionalIcon;
+    // if (data['isDay']) {
+    //   conditionalIcon = const Icon(
+    //     FontAwesomeIcons.sun,
+    //     size: 75.0,
+    //     color: Colors.white,
+    //   );
+    // } else {
+    //   conditionalIcon = const Icon(
+    //     FontAwesomeIcons.moon,
+    //     size: 75.0,
+    //     color: Colors.white,
+    //   );
+    // }
 
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -54,6 +54,7 @@ class _homeState extends State<home> {
                   'temperatureMin': result['temperatureMin'],
                   'temperatureMax': result['temperatureMax'],
                   'condition': result['condition'],
+                  'icon': result['icon'],
                   'time': result['time'],
                   'isDay': result['isDay']
                 };
@@ -100,7 +101,7 @@ class _homeState extends State<home> {
               const SizedBox(
                 height: 20.0,
               ),
-              conditionalIcon,
+              Image.network('http://openweathermap.org/img/wn/${data['icon']}@2x.png'),
               const SizedBox(
                 height: 20.0,
               ),
@@ -125,7 +126,7 @@ class _homeState extends State<home> {
               Text(
                 "${data['condition']}",
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: Colors.lightGreen,
                   fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
@@ -136,7 +137,7 @@ class _homeState extends State<home> {
               Text(
                 "${data['temperatureMin']}°c/${data['temperatureMax']}°c",
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: Colors.orange,
                   fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),

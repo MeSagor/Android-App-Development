@@ -18,20 +18,14 @@ class _SelectLocationState extends State<SelectLocation> {
       Weather(location: 'Sylhet'),
       Weather(location: 'Panchagarh'),
       Weather(location: 'London'),
-      Weather(location: 'Wuhan'),
-      Weather(location: 'Vienna'),
+      Weather(location: 'New York'),
+      Weather(location: 'Kuwait'),
       Weather(location: 'Toronto'),
       Weather(location: 'Sydney'),
       Weather(location: 'Paris'),
-      Weather(location: 'New York'),
-      Weather(location: 'Mexico City'),
-      Weather(location: 'Kuwait'),
       Weather(location: 'Kolkata'),
-      Weather(location: 'Seattle'),
       Weather(location: 'Istanbul'),
-      Weather(location: 'Beijing'),
-      Weather(location: 'Bangkok'),
-      Weather(location: 'Tokyo'),
+      Weather(location: 'Qatar'),
     ];
   }
 
@@ -45,6 +39,7 @@ class _SelectLocationState extends State<SelectLocation> {
       'temperatureMin': instance.temperatureMin,
       'temperatureMax': instance.temperatureMax,
       'condition': instance.condition,
+      'icon': instance.icon,
       'time': instance.time,
       'isDay': instance.isDay
     };

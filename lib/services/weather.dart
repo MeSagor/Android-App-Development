@@ -6,6 +6,7 @@ class Weather {
   late String temperature;
   late String temperatureMin;
   late String temperatureMax;
+  late String icon;
   late String condition;
   late String location;
   late DateTime time;
@@ -26,6 +27,7 @@ class Weather {
       temperatureMin = (data['main']['temp_min'] - 273.15).toStringAsFixed(0);
       temperatureMax = (data['main']['temp_max'] - 273.15).toStringAsFixed(0);
       condition = (data['weather'][0]['main']);
+      icon = (data['weather'][0]['icon']);
 
 
       int timeStamp = (data['dt'] - 21600); // GMT+0600 to GMT+0000
@@ -33,7 +35,7 @@ class Weather {
 
       time = DateTime.fromMillisecondsSinceEpoch((timeStamp  + timeZone) * 1000); // GMT+0000 to destination city timezone
 
-      print(time);
+      // print(time);
       isDay = time.hour > 6 && time.hour < 19 ? true : false;
     } catch (err) {
       print(err);
