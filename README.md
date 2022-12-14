@@ -1,16 +1,21 @@
-# noob_weather
 
-A new Flutter project.
+<h1 align="center">Android App Development</h1>
 
-## Getting Started
+Final Weather App <sup>`Release Ready`</sup>
 
-This project is a starting point for a Flutter application.
+## Course Details
+- Course Name: Software Development Lab III
+- Course Code: CSE-3162
+- Teacher: [MD. OMAR FARUQE](https://github.com/omarfaruqe)
 
-A few resources to get you started if this is your first Flutter project:
+## Built With
+- [Android Studio](https://developer.android.com/studio)
+- [Kotlin](https://developer.android.com/kotlin)
+- [Flutter](https://flutter.dev/)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
+<p>
+  <img src="preview/preview1.jpg" width="200" height="400" title="preview">
+  <img src="preview/preview2.jpg" width="200" height="400" title="preview">
+  <img src="preview/preview3.jpg" width="200" height="400" title="preview">
+</p>
